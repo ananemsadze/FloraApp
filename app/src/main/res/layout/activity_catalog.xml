@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#161616"
+    android:orientation="vertical"
+    tools:context=".Catalog">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/MainConstraint"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+        <TextView
+            android:id="@+id/NewArrivals"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/new_arrivals"
+            android:textColor="@color/white"
+            android:textSize="35sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/Flora" />
+
+        <TextView
+            android:id="@+id/Flora"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:fontFamily="@font/myrlissa"
+            android:text="@string/flora"
+            android:textAllCaps="false"
+            android:textColor="@color/white"
+            android:textSize="100sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+
+        <ImageButton
+            android:id="@+id/shoppingCartIcon"
+            android:layout_width="35dp"
+            android:layout_height="30dp"
+            android:layout_marginEnd="10dp"
+            android:background="@drawable/ic_cart"
+            android:contentDescription="@string/shoppingCart"
+            app:layout_constraintBottom_toBottomOf="@id/Flora"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="@id/Flora" />
+
+        <HorizontalScrollView
+            android:id="@+id/NewArrivalsScrollView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            app:layout_constraintTop_toBottomOf="@id/NewArrivals"
+            tools:ignore="MissingConstraints">
+
+
+            <androidx.appcompat.widget.LinearLayoutCompat
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <ImageButton
+                        android:id="@+id/PeaceLilyCatalog"
+                        android:layout_width="350dp"
+                        android:layout_height="290dp"
+                        android:background="@drawable/peacelilycatalog"
+                        android:contentDescription="@string/peaceLilyFlower" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="@string/peace_lily"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:typeface="sans"
+                        app:layout_constraintEnd_toEndOf="@id/PeaceLilyCatalog"
+                        app:layout_constraintStart_toStartOf="@id/PeaceLilyCatalog"
+                        app:layout_constraintTop_toBottomOf="@id/PeaceLilyCatalog" />
+
+                    <ImageButton
+                        android:id="@+id/CrotonCatalog"
+                        android:layout_width="350dp"
+                        android:layout_height="290dp"
+                        android:background="@drawable/crotoncatalog"
+                        android:contentDescription="@string/crotonflower"
+                        app:layout_constraintStart_toEndOf="@id/PeaceLilyCatalog" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="50dp"
+                        android:text="@string/croton"
+                        android:textColor="@color/white"
+                        android:textSize="22sp"
+                        android:typeface="sans"
+                        app:layout_constraintEnd_toEndOf="@id/CrotonCatalog"
+                        app:layout_constraintStart_toStartOf="@id/CrotonCatalog"
+                        app:layout_constraintTop_toBottomOf="@id/CrotonCatalog" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+            </androidx.appcompat.widget.LinearLayoutCompat>
+
+        </HorizontalScrollView>
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <TextView
+            android:id="@+id/IndoorPlants"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/indoor_plants"
+            android:textColor="@color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:typeface="sans"
+            app:layout_constraintStart_toStartOf="@id/NewArrivalsScrollView"
+            app:layout_constraintTop_toBottomOf="@id/NewArrivalsScrollView" />
+
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/IndoorPlants">
+
+
+            <ImageButton
+                android:id="@+id/ScheffleraCatalog"
+                android:layout_width="wrap_content"
+                android:layout_height="190dp"
+                android:background="@drawable/buyschefflera"
+                android:contentDescription="@string/scheffleraflower" />
+
+            <ImageButton
+                android:id="@+id/MonsteraCatalog"
+                android:layout_width="wrap_content"
+                android:layout_height="190dp"
+                android:background="@drawable/buymonstera"
+                android:contentDescription="@string/monsteraflower" />
+
+            <ImageButton
+                android:id="@+id/PonytailPalmCatalog"
+                android:layout_width="wrap_content"
+                android:layout_height="190dp"
+                android:background="@drawable/buyponytailpalm"
+                android:contentDescription="@string/ponytailpalmflower" />
+
+            <ImageButton
+                android:id="@+id/SnakePlantCatalog"
+                android:layout_width="wrap_content"
+                android:layout_height="190dp"
+                android:background="@drawable/buysnakeplant"
+                android:contentDescription="@string/snakeplantflower" />
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</androidx.core.widget.NestedScrollView>

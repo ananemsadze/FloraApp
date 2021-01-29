@@ -1,0 +1,32 @@
+<resources>
+    <string name="app_name">Flora</string>
+    <string name="email_address">Email Address</string>
+    <string name="password">Password</string>
+    <string name="display_name">Display Name</string>
+    <string name="repeat_password">Repeat Password</string>
+    <string name="sign_up">Sign Up</string>
+    <string name="flora">Flora</string>
+    <string name="welcome_to">Welcome to</string>
+    <string name="log_in">Log In</string>
+    <string name="welcome_first_line">Welcome to indoor Plant Shop!</string>
+    <string name="start_shopping">Start shopping</string>
+    <string name="add_to_cart">Add to cart</string>
+    <string name="new_arrivals">New Arrivals</string>
+    <string name="indoor_plants">Indoor Plants</string>
+    <string name="croton">Croton</string>
+    <string name="peace_lily">Peace Lily</string>
+    <string name="shoppingCart">shoppingCart</string>
+    <string name="peaceLilyFlower">peaceLilyFlower</string>
+    <string name="crotonflower">crotonFlower</string>
+    <string name="scheffleraflower">ScheffleraFlower</string>
+    <string name="monsteraflower">monsteraFlower</string>
+    <string name="ponytailpalmflower">ponytailPalmFlower</string>
+    <string name="snakeplantflower">snakePlantFlower</string>
+    <string name="backicon">backIcon</string>
+    <string name="shopping_cart">Shopping Cart</string>
+    <string name="subtotal">Subtotal:</string>
+    <string name="addedToCart">Added to Cart</string>
+    <string name="plants">Plants</string>
+    <string name="checkout">CheckOut</string>
+    <string name="thank_you_for_shopping_with_us">Thank you for shopping with us!</string>
+</resources>
