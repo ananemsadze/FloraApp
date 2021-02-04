@@ -52,6 +52,7 @@ class ShoppingCart : AppCompatActivity() {
         val schefflera = sharedPreferences.getString("ScheffleraArboricola", "")
         val snakeplant = sharedPreferences.getString("SnakePlant", "")
 
+
         PlantNames.text = croton + "\n" + monstera + "\n" + peacelily + "\n" + ponytailpalm +
                 "\n" + schefflera + "\n" + snakeplant
 
@@ -67,10 +68,16 @@ class ShoppingCart : AppCompatActivity() {
         val ponytailPalmPrice = sharedPreferences.getString("PonytailPalmPrice", "0")
         val scheffleraPrice = sharedPreferences.getString("ScheffleraPrice", "0")
         val snakePlantPrice = sharedPreferences.getString("SnakePlantPrice", "0")
+        val crotonPricenumber = sharedPreferences.getString("CrotonPrice", "")
+        val monsteraPricenumber = sharedPreferences.getString("MonsteraPrice", "")
+        val peaceLilyPricenumber = sharedPreferences.getString("PeaceLilyPrice", "")
+        val ponytailPalmPricenumber = sharedPreferences.getString("PonytailPalmPrice", "")
+        val scheffleraPricenumber = sharedPreferences.getString("ScheffleraPrice", "")
+        val snakePlantPricenumber = sharedPreferences.getString("SnakePlantPrice", "")
 
 
-        PriceTags.text = crotonPrice + "\n" + monsteraPrice + "\n" + peaceLilyPrice +
-                "\n" + ponytailPalmPrice + "\n" + scheffleraPrice + "\n" + snakePlantPrice
+        PriceTags.text = crotonPricenumber + "\n" + monsteraPricenumber + "\n" + peaceLilyPricenumber +
+                "\n" + ponytailPalmPricenumber + "\n" + scheffleraPricenumber + "\n" + snakePlantPricenumber
 
 
 
